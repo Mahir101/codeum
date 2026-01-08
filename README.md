@@ -36,6 +36,7 @@ graph TD
     ROOT --> MATH[Mathematics<br/>60 algorithms]
     ROOT --> STR[Strings<br/>24 algorithms]
     ROOT --> NT[Number Theory<br/>74 algorithms]
+    ROOT --> QC[Quantum Computing<br/>8 Rust implementations]
     ROOT --> OTHER[Geometry + Game Theory<br/>+ Miscellaneous]
     
     GT --> GT1[Traversal & Search]
@@ -1127,8 +1128,9 @@ graph TB
 |----------|-------|
 | **Classical Algorithms** | 390+ |
 | **LeetCode Patterns** | 350+ |
+| **Quantum Computing (Rust)** | 10+ |
 | **Modern Algorithms** | 25+ |
-| **Total Algorithms/Patterns** | **750+** |
+| **Total Algorithms/Patterns** | **770+** |
 | **C++ Files** | 300+ |
 | **Lines of Code** | 50,000+ |
 | **LeetCode Problems Covered** | 2000+ |
@@ -1166,6 +1168,19 @@ codeum/
 │   ├── 02_Two_Pointers/
 │   ├── ... (43 pattern categories)
 │   └── 43_Binary_Lifting/
+│
+├── QuantumComputing/ (10+ Rust files)
+│   ├── README.md
+│   ├── 001_basics.rs
+│   ├── 002_circuits.rs
+│   ├── 003_grover.rs
+│   ├── 004_qft.rs
+│   ├── 005_shors.rs
+│   ├── 006_teleportation.rs
+│   ├── 007_bb84_qkd.rs
+│   ├── 008_vqe.rs
+│   ├── 009_qaoa_maxcut.rs
+│   └── 010_error_correction.rs
 │
 └── Patterns/
     ├── DynamicProgramming/
