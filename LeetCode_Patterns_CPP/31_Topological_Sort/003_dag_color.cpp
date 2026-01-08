@@ -15,7 +15,7 @@ int largestPathValue(string colors, vector<vector<int>>& edges) {
     vector<vector<int>> count(n, vector<int>(26, 0));
     queue<int> q;
     for (int i = 0; i < n; i++) if (indegree[i] == 0) q.push(i);
-    d
+    
     int processed = 0, result = 0;
     while (!q.empty()) {
         int u = q.front(); q.pop();
