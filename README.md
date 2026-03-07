@@ -6,400 +6,249 @@
 
 ---
 
-## 📑 COMPREHENSIVE INDEX
-- [I. REAL-WORLD USES (Detailed Reference)](#i-real-world-algorithm-applications)
-- [II. ALGORITHM MIXTURES (System Architecture)](#ii-algorithm-mixtures--complex-combinations)
-- [III. ADVANCED ALGORITHMS (AI, Bio, Quantum)](#iii-advanced--modern-algorithms)
-- [IV. PATTERN CONNECTIONS (Master Knowledge Graph)](#iv-pattern-connections---master-knowledge-graph)
-- [V. VISUALIZATIONS & MAPS (Full Taxonomy)](#v-algorithm-visualizations--maps)
-- [VI. COMPLETE REPOSITORY SUMMARY (Stats & Learning Paths)](#vi-complete-repository-summary)
+## 🗺️ VISUAL COMMAND CENTER & DECISION SUPPORT
+*Harness the power of visual mapping to choose the right algorithm and understand deep pattern connections.*
 
----
-
-# I. REAL-WORLD ALGORITHM APPLICATIONS
-
-## Graph Theory Algorithms (90 algorithms)
-
-### Core Traversal & Search
-#### BFS (Breadth-First Search)
-**Real-World Uses:**
-- **Facebook**: Friend suggestion system - finding shortest connection paths between users
-- **LinkedIn**: "People You May Know" feature - exploring network connections level by level
-- **Google Crawler**: Web indexing - discovering linked pages systematically
-- **Cisco Routers**: Network packet routing - finding shortest hop paths
-**Why BFS?**: Guarantees shortest path in unweighted graphs, memory-efficient for wide graphs.
-
-#### DFS (Depth-First Search)
-**Real-World Uses:**
-- **GitHub**: Dependency resolution - detecting circular dependencies in packages
-- **Amazon**: Product recommendation trees - exploring deep category hierarchies
-- **Compiler Design**: Dead code elimination - traversing control flow graphs
-- **Maze Solving**: Robotics path planning - exploring all possible routes
-**Why DFS?**: Memory-efficient for deep graphs, natural recursion fit for tree structures.
-
-### Shortest Path Algorithms
-#### Dijkstra's Algorithm
-**Real-World Uses:**
-- **Google Maps**: Turn-by-turn navigation - finding fastest route
-- **Uber/Lyft**: Dynamic pricing zones - calculating optimal pickup/dropoff routes
-- **WhatsApp**: Message routing - finding lowest latency path through servers
-- **Airlines**: Flight routing - minimizing fuel costs across waypoints
-**Why Dijkstra?**: Optimal for non-negative weights, efficient with heap, real-time performance.
-
-#### Bellman-Ford Algorithm
-**Real-World Uses:**
-- **Network Telecommunications**: Distance-vector routing (RIP protocol)
-- **Currency Arbitrage**: Detecting profitable exchange cycles
-- **Border Gateway Protocol (BGP)**: Internet routing
-**Why Bellman-Ford?**: Handles negative weights, detects arbitrage opportunities.
-
-#### Floyd-Warshall Algorithm
-**Real-World Uses:**
-- **Cloud Computing**: Data center network optimization
-- **Game Development**: NPC pathfinding distance matrices
-**Why Floyd-Warshall?**: Efficient for dense graphs, all-pairs solution.
-
-#### A* Search
-**Real-World Uses:**
-- **GPS Navigation**: Real-time route guidance with heuristics
-- **Game AI**: Character pathfinding in Starcraft, Age of Empires
-**Why A*?**: Faster than Dijkstra with good heuristics.
-
-### Network Flow & Matching
-#### Max Flow (Dinic's/Ford-Fulkerson)
-**Real-World Uses:**
-- **Netflix/YouTube**: CDN bandwidth optimization
-- **Amazon**: Supply chain logistics flow
-- **Airlines**: Airline scheduling through hubs
-- **Image Segmentation**: Adobe min-cut for object detection
-
-#### Min-Cost Max-Flow (MCMF)
-**Real-World Uses:**
-- **Delivery Services**: UPS, FedEx route optimization
-- **Cloud Services**: AWS EC2 placement - cost minimization
-
-#### Maximum Matching
-**Real-World Uses:**
-- **Uber/Lyft**: Driver-rider matching
-- **Tinder/Dating Apps**: User matching
-- **LinkedIn**: Job-candidate matching
-- **AdTech**: Google Ads auction matching
-
-### Minimum Spanning Tree (MST)
-#### Kruskal's MST
-**Real-World Uses:**
-- **Telecommunications**: AT&T network cable layout
-- **Electrical Grid**: Power infrastructure - minimizing costs
-- **Clustering**: Machine learning (k-means initialization)
-
-#### Prim's MST
-**Real-World Uses:**
-- **Network Design**: LAN cable installation
-- **Wireless Networks**: Sensor network topology
-
-#### Directed MST (Edmonds)
-**Real-World Uses:**
-- **Dependency Resolution**: Package managers (npm, pip)
-- **Network Broadcasting**: Optimal broadcast tree construction
-
-### Connectivity & Decomposition
-#### SCC (Tarjan's/Kosaraju's)
-**Real-World Uses:**
-- **Compiler Optimization**: Call graph analysis
-- **Web Crawling**: Google PageRank preprocessing
-- **Deadlock Detection**: Operating systems circular wait detection
-
-#### Articulation Points & Bridges
-**Real-World Uses:**
-- **Network Reliability**: Identifying critical routers/links
-- **Power Grid**: Identifying critical substations
-
-#### Block-Cut Tree
-**Real-World Uses:**
-- **Network Design**: Organising biconnected components
-- **Fault-Tolerant Systems**: Resilient architectures
-
-### Tree Algorithms
-#### LCA (Lowest Common Ancestor)
-**Real-World Uses:**
-- **File Systems**: Common parent directory finding
-- **Biology**: Common evolution ancestors
-- **Version Control**: Git merge base
-
-#### Heavy-Light Decomposition (HLD)
-**Real-World Uses:**
-- **Network Monitoring**: Path queries on network topologies
-- **Corporate Hierarchies**: Aggregate queries on department paths
-
-#### Centroid Decomposition
-**Real-World Uses:**
-- **Large-Scale Analytics**: Divide-and-conquer on tree data
-- **Network Analysis**: Load balancing in tree networks
-
-#### Link-Cut Tree
-**Real-World Uses:**
-- **Dynamic Networks**: Online graph updates
-- **Game Engines**: Dynamic scene graphs
-
-### Advanced Graph Algorithms
-#### Maximum Clique
-**Real-World Uses:**
-- **Social Network Analysis**: Tight community detection
-- **Bioinformatics**: Functional module identification
-
-#### Graph Coloring
-**Real-World Uses:**
-- **Exam Scheduling**: Conflict minimization
-- **Register Allocation**: Compiler assigning CPU registers
-- **Frequency Assignment**: Cellular network interference
-
-#### Steiner Tree
-**Real-World Uses:**
-- **VLSI Design**: Chip routing with terminal connections
-- **Network Multicast**: Minimal receiver cost
-
-#### Traveling Salesman (TSP approximations)
-**Real-World Uses:**
-- **Delivery Services**: Stop efficiency planning
-- **Manufacturing**: PCB drill routing
-- **DNA Sequencing**: Fragment assembly
-
-#### Eulerian Path/Circuit
-**Real-World Uses:**
-- **DNA Sequencing**: De Bruijn graph assembly
-- **Route Planning**: Snow plow/street cleaning one-pass routes
-
-#### Stable Marriage Problem
-**Real-World Uses:**
-- **Medical Residency Matching**: US NRMP matching
-- **School Choice**: Student assignment
-- **Kidney Exchange**: Donor-recipient matching
-
-## Data Structures (62 implementations)
-
-### Range Query Structures
-#### Segment Tree
-- **MongoDB**: Range query optimization
-- **Google Analytics**: Time-series aggregation
-- **Financial Systems**: Stock price queries
-- **Computational Geometry**: Rectangle intersection/union queries
-
-#### Fenwick Tree (BIT)
-- **Gaming**: Live leaderboards
-- **Financial**: Cumulative stock volume
-- **E-commerce**: Inventory management range sums
-
-#### Sparse Table
-- **Database Systems**: Static RMQ preprocessing
-- **LCA Preprocessing**: Constant-time queries
-
-#### Implicit Treap (Rope)
-- **Text Editors**: VSCode/Sublime efficient insert/delete/reverse
-- **Undo Systems**: Maintaining operation history
-
-### Union-Find (DSU)
-- **Image Processing**: Flood fill/connected labeling
-- **Kruskal's MST**: Cycle detection
-- **Social Networks**: Community merging
-
-### String Data Structures
-#### Trie
-- **Google Search**: Autocomplete
-- **IDE**: Code completion
-- **IP Routing**: Longest prefix matching
-
-#### Suffix Array & Tree
-- **Genome Sequencing**: Pattern finding (BLAST)
-- **Data Compression**: Finding repeated substrings
-- **Plagiarism Detection**: Turnitin substring check
-
-#### Aho-Corasick
-- **Antivirus**: Multi-signature scanning
-- **Content Filtering**: Firewall keyword blocking
-
-### Dynamic Programming Optimizations
-- **Convex Hull Trick**: Production cost optimization
-- **Knuth Optimization**: Optimal BST construction, TeX line breaking
-- **SOS DP**: Subset aggregation for e-commerce, Game theory
-- **Digit DP**: Range counting for large numbers (10^18)
-
-## Math & Linear Algebra
-- **FFT / NTT**: Spotify audio processing, JPEG compression
-- **Gaussian Elimination**: Machine learning (regression), SPICE simulation
-- **Simplex Algorithm**: Airline crew scheduling, Finance optimization
-- **Berlekamp-Massey**: Error-correcting codes, Cryptanalysis
-- **Lagrange Interpolation**: Shamir's Secret Sharing
-
-## Number Theory
-- **Miller-Rabin**: RSA prime generation, SSL/TLS keys
-- **Pollard's Rho**: RSA factorization/breaking challenge numbers
-- **Extended Euclidean**: Modular inverses for cryptography
-- **Chinese Remainder Theorem**: Fast RSA decryption, Calendar cycles
-- **Lucas' Theorem**: Large binomial coefficients mod p
-
----
-
-# II. ALGORITHM MIXTURES & COMPLEX COMBINATIONS
-
-## Google Maps Navigation System
-**Mixture**: Dijkstra + A* + Contraction Hierarchies + Arc Flags + SPFA + ML Traffic Prediction.
+### 🌳 Algorithm Selection Decision Tree
+Choose the best algorithm for any problem based on constraints and data type.
 
 ```mermaid
 graph TD
-    A[User Query: A to B] --> B[Graph Preprocessing]
-    B --> C[Contraction Hierarchies]
-    C --> D[Bidirectional A*]
-    D --> E{Path Found?}
-    E -->|Yes| F[Traffic Data Integration]
-    E -->|No| G[Fallback: Standard Dijkstra]
-    F --> H[Machine Learning<br/>Traffic Prediction]
-    H --> I[Turn-by-Turn<br/>Cost Adjustment]
-    I --> J[Arc Flags<br/>Highway Detection]
-    J --> K[Final Route]
+    START{What type of<br/>problem?}
+    
+    START -->|Graph| GRAPH_Q{Weighted<br/>edges?}
+    START -->|Array/Range| ARRAY_Q{Updates?}
+    START -->|String| STRING_Q{Pattern<br/>matching?}
+    START -->|Number| NUMBER_Q{Prime-related?}
+    
+    %% Graph Branch
+    GRAPH_Q -->|Yes| WEIGHTED{Negative<br/>weights?}
+    GRAPH_Q -->|No| UNWEIGHTED{What to<br/>find?}
+    
+    WEIGHTED -->|Yes| BELLMAN[Bellman-Ford<br/>or SPFA]
+    WEIGHTED -->|No| POSITIVE{All-pairs or<br/>single-source?}
+    POSITIVE -->|Single| DIJKSTRA_F[Dijkstra's<br/>Algorithm]
+    POSITIVE -->|All-pairs| DENSE{Dense<br/>graph?}
+    DENSE -->|Yes| FW_F[Floyd-Warshall]
+    DENSE -->|No| JOHNSON_F[Johnson's<br/>Algorithm]
+    
+    UNWEIGHTED -->|Shortest Path| BFS_F[BFS]
+    UNWEIGHTED -->|Connected Components| DFS_UNION{Need to<br/>maintain?}
+    DFS_UNION -->|Yes| DSU_F[Union-Find]
+    DFS_UNION -->|No| DFS_F[DFS]
+    UNWEIGHTED -->|Cycle Detection| DIRECTED{Directed?}
+    DIRECTED -->|Yes| TOPO_F[Topological Sort<br/>+ DFS]
+    DIRECTED -->|No| DFS_COLOR[DFS with<br/>coloring]
+    
+    %% Array/Range Branch
+    ARRAY_Q -->|Yes| UPDATE_TYPE{Update<br/>type?}
+    ARRAY_Q -->|No| STATIC_QUERY{Query<br/>type?}
+    
+    UPDATE_TYPE -->|Point| POINT_Q{Query type?}
+    UPDATE_TYPE -->|Range| SEGLAZY_F[Segment Tree<br/>with Lazy Prop]
+    POINT_Q -->|Range Sum| BIT_F[Fenwick Tree]
+    POINT_Q -->|Range Min/Max| SEGTREE_F[Segment Tree]
+    
+    STATIC_QUERY -->|RMQ/GCD| SPARSE_F[Sparse Table<br/>O1 query]
+    STATIC_QUERY -->|Range Sum| PREFIX_F[Prefix Sum]
+    
+    %% String Branch
+    STRING_Q -->|Yes| MULTI_PATTERN{Multiple<br/>patterns?}
+    STRING_Q -->|No| STRING_OP{Operation?}
+    
+    MULTI_PATTERN -->|Yes| AHOC_F[Aho-Corasick]
+    MULTI_PATTERN -->|No| SINGLE_MATCH{Pattern<br/>has wildcards?}
+    SINGLE_MATCH -->|No| SIMPLE_MATCH{Which to<br/>use?}
+    SIMPLE_MATCH --> KMP_F[KMP simpler<br/>failure function]
+    SIMPLE_MATCH --> Z_F[Z-Algorithm<br/>simpler code]
+    
+    STRING_OP -->|Palindromes| MANACHER_F[Manacher's<br/>Algorithm]
+    STRING_OP -->|All substrings| SUFFIX_F[Suffix Array<br/>or Tree]
+    STRING_OP -->|Autocomplete| TRIE_F[Trie]
+    
+    %% Number Theory Branch  
+    NUMBER_Q -->|Yes| PRIME_OP{Operation?}
+    NUMBER_Q -->|No| MOD_Q{Modular<br/>arithmetic?}
+    
+    PRIME_OP -->|Test primality| SIZE{Number<br/>size?}
+    SIZE -->|Small 10^6| SIEVE_F[Sieve]
+    SIZE -->|Large 10^18| MILLER_F[Miller-Rabin]
+    PRIME_OP -->|Factorize| POLLARD_F[Pollard Rho]
+    PRIME_OP -->|Generate primes| RANGE{Range<br/>size?}
+    RANGE -->|Small| SIEVE_F
+    RANGE -->|Large| SEGMENTED_F[Segmented<br/>Sieve]
+    
+    MOD_Q -->|Yes| MOD_OP{Operation?}
+    MOD_OP -->|Inverse| EXTGCD_F[Extended<br/>Euclid]
+    MOD_OP -->|System of congruences| CRT_F[Chinese<br/>Remainder Theorem]
+    MOD_OP -->|x^k = a mod p| DISCRETE_F[Discrete<br/>Root/Log]
+    
+    style DIJKSTRA_F fill:#4CAF50,color:white
+    style BFS_F fill:#4CAF50,color:white
+    style SEGTREE_F fill:#2196F3,color:white
+    style KMP_F fill:#FF9800,color:white
+    style MILLER_F fill:#9C27B0,color:white
 ```
-
-## Netflix CDN Content Delivery
-**Mixture**: Min-Cost Max-Flow + K-Means Clustering + Load Balancing + Huffman Encoding + Cache Eviction (LRU).
-
-```mermaid
-graph LR
-    A[Content Upload] --> B[Geographic Clustering<br/>K-Means]
-    B --> C[Network Topology<br/>Graph Modeling]
-    C --> D[Min-Cost Max-Flow<br/>Server Placement]
-    D --> E[Load Balancing<br/>Greedy Assignment]
-    E --> F[Cache Strategies<br/>LRU + Frequency]
-    F --> G[Content Delivery<br/>Shortest Path]
-```
-
-## Uber Matching
-**Mixture**: Bipartite Matching (Hungarian) + Real-time Dijkstra + Greedy Fallback + Predictive ML.
-
-## Facebook News Feed
-**Mixture**: BFS + PageRank + ML Edge Weighting + Priority Queue + Time Decay.
-
-## Amazon Warehouse
-**Mixture**: Hungarian + TSP (2-opt) + Dijkstra + Bin Packing + Knapsack DP.
 
 ---
 
-# III. ADVANCED & MODERN ALGORITHMS
-
-## Graph Neural Networks (GNNs)
-### Graph Convolutional Networks (GCN)
-`H^(l+1) = σ(D^(-1/2) A D^(-1/2) H^l W^l)`
-Used in Google Scholar, Pinterest similarity.
-
-### GraphSAGE
-Inductive learning with neighborhood sampling. Scales to billion-node Pinterest/LinkedIn graphs.
-
-### Graph Attention Networks (GAT)
-Attention mechanisms on graph neighborhoods. DeepMind AlphaFold.
-
-### Temporal Graph Networks (TGN)
-Dynamic graphs/evolving edges. Fraud detection in banking.
-
-## DNA & Bioinformatics
-### De Bruijn Graph Assembly
-Assembling genome using Eulerian paths. Human Genome Project.
-
-### Burrows-Wheeler Transform (BWT)
-$O(pattern)$ pattern matching. BWA aligner.
-
-### Smith-Waterman & Needleman-Wunsch
-DP for sequence alignment. BLAST indexing.
-
-## Quantum Computing
-### Grover's Search
-$O(\sqrt{N})$ search on unsorted database.
-
-### Shor's Factorization
-Integer factorization in polynomial time. Breaks RSA.
-
-### Variational Quantum Eigensolver (VQE)
-Hybrid classical-quantum for ground state energies. Materials science.
-
----
-
-# IV. PATTERN CONNECTIONS - Master Knowledge Graph
+### 🕸️ Master Knowledge Graph (Pattern Connections)
+How all 350+ Patterns and Algorithms connect through dependencies and composition rules.
 
 ```mermaid
 graph TB
+    %% Foundation Layer
     ARRAY[Array Basics] --> PREFIX[Prefix Sum]
     ARRAY --> TWOPTR[Two Pointers]
     ARRAY --> SLIDING[Sliding Window]
     ARRAY --> BINSEARCH[Binary Search]
-    TWOPTR --> FASTSL[Fast & Slow]
+    
+    %% String builds on Array
+    STRING[String Basics] --> ARRAY
+    STRING --> HASH[Hashing]
+    STRING --> TRIE[Trie]
+    
+    %% Two Pointers variations
+    TWOPTR --> FASTSL[Fast & Slow Pointers]
+    TWOPTR --> DUTCH[Dutch National Flag]
+    FASTSL --> CYCLE[Cycle Detection]
+    
+    %% Sliding Window to Two Pointers
     SLIDING --> TWOPTR
-    RECURSION[Recursion] --> DP[Dynamic Programming]
+    SLIDING --> HASH
+    
+    %% Binary Search variations
+    BINSEARCH --> BSANSWER[Binary Search on Answer]
+    BINSEARCH --> ROTATED[Rotated Array Search]
+    
+    %% Dynamic Programming Foundation
+    RECURSION[Recursion] --> MEMO[Memoization]
+    MEMO --> DP[Dynamic Programming]
     DP --> LINEAR_DP[Linear DP]
-    TREE[Tree Basics] --> TREE_DFS[Tree DFS]
+    DP --> KNAPSACK[Knapsack DP]
+    DP --> SUBSTRING_DP[Substring DP]
+    DP --> TREE_DP[Tree DP]
+    DP --> BITMASK_DP[Bitmask DP]
+    
+    %% Tree Patterns
+    TREE[Tree Basics] --> TREE_BFS[Tree BFS]
+    TREE --> TREE_DFS[Tree DFS]
+    TREE_DFS --> TREE_DP
+    TREE_BFS --> LEVEL_ORDER[Level Order]
+    
+    %% Graph builds on Tree
     GRAPH[Graph Basics] --> TREE
+    GRAPH --> GRAPH_BFS[Graph BFS]
+    GRAPH --> GRAPH_DFS[Graph DFS]
+    GRAPH_DFS --> SCC[SCC - Tarjan/Kosaraju]
+    GRAPH_DFS --> TOPO[Topological Sort]
+    GRAPH_BFS --> SHORTEST[Shortest Path - BFS]
+    
+    %% Union-Find
     UF[Union-Find] --> MST_KRUSKAL[Kruskal's MST]
+    UF --> CONN_COMP[Connected Components]
+    
+    %% Backtracking
+    RECURSION --> BACKTRACK[Backtracking]
+    BACKTRACK --> PERMUTE[Permutations]
+    BACKTRACK --> COMBO[Combinations]
+    BACKTRACK --> SUBSET[Subsets]
+    
+    %% Advanced Structures
+    STACK[Stack] --> MONO_STACK[Monotonic Stack]
+    QUEUE[Queue] --> MONO_QUEUE[Monotonic Queue]
+    MONO_QUEUE --> SLIDING
+    
+    %% Interval Patterns
+    SORT[Sorting] --> INTERVAL[Interval Patterns]
+    INTERVAL --> MERGE_INT[Merge Intervals]
+    INTERVAL --> SWEEP[Sweep Line]
+    
+    %% Heap Patterns
+    HEAP[Heap/Priority Queue] --> TOPK[Top K Elements]
+    HEAP --> KWAY[K-way Merge]
+    
+    style DP fill:#9C27B0,color:white
+    style GRAPH fill:#4CAF50,color:white
+    style SLIDING fill:#2196F3,color:white
+    style BACKTRACK fill:#FF9800,color:white
 ```
-
-| Pattern Composition | Examples |
-|---------------------|----------|
-| **Sliding Window + Hash Table** | Find substring (LC 76) |
-| **DP + Binary Search** | Monotonic DP (LC 300) |
-| **DFS/BFS + DP** | Tree/Graph optimization (LC 124) |
-| **Monotonic Stack + DP** | LC 84, 85 |
 
 ---
 
-# V. ALGORITHM VISUALIZATIONS & MAPS
+### 🧬 Master Algorithm Taxonomy
+A complete hierarchical map of the library's 750+ implementations.
 
-## Master Algorithm Taxonomy
 ```mermaid
 graph TD
     ROOT[Algorithm Library<br/>750+ Implementations]
+    
     ROOT --> GT[Graph Theory<br/>90 algorithms]
     ROOT --> DS[Data Structures<br/>62 implementations]
     ROOT --> DP[Dynamic Programming<br/>22 optimizations]
-    ROOT --> LC[LeetCode Patterns<br/>350+ patterns]
+    ROOT --> MATH[Mathematics<br/>60 algorithms]
+    ROOT --> STR[Strings<br/>24 algorithms]
+    ROOT --> NT[Number Theory<br/>74 algorithms]
     ROOT --> MOD[Modern Algorithms<br/>25+ GNN/QC/DNA]
+    
+    GT --> GT1[Traversal & Search]
+    GT --> GT2[Shortest Path]
+    GT --> GT3[Network Flow]
+    GT --> GT4[Matching]
+    GT --> GT5[MST]
+    GT --> GT6[Connectivity]
+    GT --> GT7[Tree Algorithms]
+    
+    GT1 --> GT1A[BFS<br/>DFS<br/>Topological Sort]
+    GT2 --> GT2A[Dijkstra<br/>Bellman-Ford<br/>Floyd-Warshall<br/>Johnson<br/>SPFA<br/>A*]
+    GT3 --> GT3A[Max Flow: Dinic, Ford-Fulkerson<br/>Min Cost Max Flow<br/>Push-Relabel<br/>L-R Flow]
+    GT4 --> GT4A[Bipartite: Hungarian, Hopcroft-Karp, Kuhn<br/>General: Blossom]
+    GT5 --> GT5A[Kruskal<br/>Prim<br/>Boruvka<br/>Directed MST]
+    GT6 --> GT6A[SCC: Tarjan, Kosaraju<br/>Bridges & Articulation<br/>2-SAT, 3-SAT<br/>Block-Cut Tree]
+    GT7 --> GT7A[LCA variants<br/>HLD<br/>Centroid Decomp<br/>Link-Cut Tree]
+    
+    DS --> DS1[Range Query]
+    DS --> DS2[Tree Structures]
+    DS --> DS3[Union-Find]
+    DS --> DS4[String DS]
 ```
 
-## Algorithm Selection Decision Tree
+---
+
+### ⚡ Algorithm Evolution & Complexity Ladder
+The history and performance comparison of search and optimization algorithms.
+
 ```mermaid
-graph TD
-    START{What type of<br/>problem?}
-    START -->|Graph| GRAPH_Q{Weighted?}
-    START -->|Array| ARRAY_Q{Updates?}
-    GRAPH_Q -->|Yes| DIJKSTRA[Dijkstra]
-    GRAPH_Q -->|No| BFS_F[BFS]
-    ARRAY_Q -->|Yes| SEGLAZY[Segment Tree Lazy]
-    ARRAY_Q -->|No| PREFIX_F[Prefix Sum]
+timeline
+    title Evolution of Key Algorithms
+    section 1950s-1960s
+        1956 : Dijkstra's Algorithm
+        1957 : Bellman-Ford
+        1962 : Floyd-Warshall
+    section 1970s
+        1970 : Dinic's Max Flow
+        1973 : Aho-Corasick
+        1975 : Tarjan's SCC
+        1977 : KMP String Matching
+    section 1990s-2024
+        1994 : Link-Cut Trees
+        2024 : This Library! 750+ implementations
 ```
 
 ---
 
-# VI. COMPLETE REPOSITORY SUMMARY
-
-## Grand Total Statistics
-- **Classical Algorithms**: 390+
-- **LeetCode Patterns**: 350+
-- **Modern Algorithms**: 25+
-- **Total united content**: **770+**
-- **C++ Implementations**: **600+**
-- **Lines of Code**: **50,000+**
-- **FAANG Use-Cases**: **300+**
-- **Mermaid Diagrams**: **35+**
-
-## Repository Structure
-- `Graph Theory/` (90 folders)
-- `Data Structures/` (62 folders)
-- `LeetCode_Patterns_CPP/` (43 categories)
-- `QuantumComputing/` (10 Rust files)
+## 📑 TABLE OF CONTENTS
+1. [Algorithm Mixtures & System Architectures](#algorithm-mixtures--complex-combinations)
+2. [Advanced & Modern Algorithms (AI/Bio/Quantum)](#advanced--modern-algorithms)
+3. [Real-World Algorithm Applications (FAANG Reference)](#real-world-algorithm-applications)
+4. [Pattern Connections - Knowledge Graph](#pattern-connections---master-knowledge-graph)
+5. [Complete Repository Summary](#complete-repository-summary)
 
 ---
 
-## 🎉 THE ULTIMATE ACHIEVEMENT
-**You are now viewing the most integrated algorithm documentation in existence. Every implementation is grounded in theory and justified by industrial usage. From zero to hero - all algorithms, all patterns, all connected!** 🚀
-
-**⭐ If you find this library helpful, please consider giving it a star!**
 
 ---
-© 2026 Md. Mahir Labib | Licensed under MIT
+
 # Algorithm Mixtures & Complex Combinations
 
 This document showcases how top tech companies combine multiple algorithms to build sophisticated systems. Real production systems rarely use algorithms in isolation - understanding these mixtures is key to system design.
@@ -3639,8 +3488,3 @@ You now have access to:
 - **System architecture examples from FAANG**
 
 From zero to hero - all algorithms, all patterns, all connected! 🚀
-
-
----
-
-© 2026 Md. Mahir Labib | Licensed under MIT
